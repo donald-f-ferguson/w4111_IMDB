@@ -1,0 +1,20 @@
+{
+  "service_definitions": {
+    "artists": {
+      "kind": "application_resource",
+      "class": "ArtistResource",
+      "data_resource": "mysql",
+      "config_info": {
+        "db_table_name": "imdbfixed.name_basics"
+      }
+    },
+    "mysql": {
+      "class": "RDBDataResource",
+      "kind": "data_resource",
+      "config_info": {
+        "user": "dbuser",
+        "password": "dbuserdbuser"
+      }
+    }
+  }
+}
