@@ -5,7 +5,16 @@
       "class": "ArtistResource",
       "data_resource": "mysql",
       "config_info": {
-        "db_table_name": "imdbfixed.name_basics"
+        "db_table_name": "imdb_fixed.name_basics"
+      }
+    },
+    "titles": {
+      "kind": "application_resource",
+      "class": "TitleResource",
+      "data_resource": "mysql",
+      "config_info": {
+        "db_table_name": "imdbfixed.title_basics",
+        "key_columns": ["tconst"]
       }
     },
     "mysql": {
